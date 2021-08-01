@@ -18,7 +18,10 @@ local plategov = "https://www.centralroleplaygaming.com/assets/plates/govenment_
 local govbmp = "https://www.centralroleplaygaming.com/assets/plates/gov_plate_nm.png" -- Government Plate Bumpmap
 local basebmp = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png" -- Plate 1- 4 Bumpmap
 
-
+local bmPlate1 = 
+local bmPlate2 = 
+local bmPlate3 = 
+local bmPlate4 = 
 
 
 ---------------------------------------------------------|

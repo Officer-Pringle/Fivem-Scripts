@@ -2,7 +2,7 @@
 -- Fix Bump Map and Texture POS
 -----------------------------------------
 -- Code edited by Pringle to work with mutiple plates
--- Code Made by
+-- Code Made by MASRPNathan-G
 
 -- Use a upload image, use imagr, a custom domain
 
@@ -75,6 +75,10 @@ AddReplaceTexture('vehshare', 'plate01_n', 'duiTxd', 'basebmp')
 AddReplaceTexture('vehshare', 'plate02_n', 'duiTxd', 'basebmp')
 AddReplaceTexture('vehshare', 'plate03_n', 'duiTxd', 'basebmp')
 AddReplaceTexture('vehshare', 'plate04_n', 'duiTxd', 'basebmp')
+
+
+
+
 
 ------------ Gov Plate Normal Backing
 local govbmp = "https://www.centralroleplaygaming.com/assets/plates/gov_plate_nm.png"

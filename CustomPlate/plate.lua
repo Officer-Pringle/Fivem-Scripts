@@ -16,12 +16,12 @@ local plategov = "https://www.centralroleplaygaming.com/assets/plates/govenment_
 
 -- Bumpmap Textures
 local govbmp = "https://www.centralroleplaygaming.com/assets/plates/gov_plate_nm.png" -- Government Plate Bumpmap
-local basebmp = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png" -- Plate 1- 4 Bumpmap
+-- local basebmp = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png" -- Plate 1- 4 Bumpmap   Removed with update 8/1
 
-local bmPlate1 = 
-local bmPlate2 = 
-local bmPlate3 = 
-local bmPlate4 = 
+local bmPlate1 = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png"
+local bmPlate2 = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png"
+local bmPlate3 = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png"
+local bmPlate4 = "htps://www.centralroleplaygaming.com/assets/plates/base_bump.png"
 
 
 ---------------------------------------------------------|
@@ -68,7 +68,7 @@ AddReplaceTexture('vehshare', 'plate05', 'duiTxd', 'duiTex5') -- Applies "duiTex
 --------------------------------------------
 
 
------------- All PLate normal Backing
+--[[  DEBUG
 
 local basebmp = "https://www.centralroleplaygaming.com/assets/plates/base_bump.png"
 local basebmpimg = CreateDui(basebmp, 540, 300)
@@ -79,8 +79,37 @@ AddReplaceTexture('vehshare', 'plate02_n', 'duiTxd', 'basebmp')
 AddReplaceTexture('vehshare', 'plate03_n', 'duiTxd', 'basebmp')
 AddReplaceTexture('vehshare', 'plate04_n', 'duiTxd', 'basebmp')
 
+]]
+---------------------------------------------------------------------------------|
+-------------------[[ PLATE BUMP MAPS ]] ----------------------------------------|
+---------------------------------------------------------------------------------|
 
+local PlateImage = {
+    [1] = CreateDUI( bmPlate1 , 540, 300),
+    [2] = CreateDUI( bmPlate2 , 540, 300),
+    [3] = CreateDUI( bmPlate3 , 540, 300),
+    [4] = CreateDUI( bmPlate4 , 540, 300),
+}
 
+local PlateHandle = {
+    [1] = GetDuiHandle(PlateImage[1]),
+    [2] = GetDuiHandle(PlateImage[2]),
+    [3] = GetDuiHandle(PlateImage[3]),
+    [4] = GetDuiHandle(PlateImage[4]),
+}
+
+---- Plate 1 Bumpmap
+CreateRuntimeTextureFromDuiHandle(textureDic, "PlateBM1", PlateHandle[1])
+AddReplaceTexture('vehshare', 'plate01_n', 'duiTxd', 'PlateBM1')
+---- Plate 2 Bumpmap
+CreateRuntimeTextureFromDuiHandle(textureDic, "PlateBM2", PlateHandle[2])
+AddReplaceTexture('vehshare', 'plate01_n', 'duiTxd', 'PlateBM2')
+---- Plate 3 Bumpmap
+CreateRuntimeTextureFromDuiHandle(textureDic, "PlateBM3", PlateHandle[3])
+AddReplaceTexture('vehshare', 'plate01_n', 'duiTxd', 'PlateBM3')
+---- Plate 4 Bumpmap
+CreateRuntimeTextureFromDuiHandle(textureDic, "PlateBM4", PlateHandle[4])
+AddReplaceTexture('vehshare', 'plate01_n', 'duiTxd', 'PlateBM4')
 
 
 ------------ Gov Plate Normal Backing
